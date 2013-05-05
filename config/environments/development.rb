@@ -34,4 +34,8 @@ Omrails::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # In production, :host should be set to the actual host of your application.
+  # We don't actually know the host, this depends on the domain name YOU registered; apiwat.co or paulhanv.com?
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
