@@ -9,6 +9,7 @@ class PinsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
+      format.js
     end
   end
 
@@ -20,6 +21,7 @@ class PinsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @pin }
+      format.js
     end
   end
 
